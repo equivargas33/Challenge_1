@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+
+    body{
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    :root{
+      --very-light-pink: #cfc9c9; 
+    }
+    .main-container{
+      display: grid;
+      place-items: center;
+      background: #F6D776;
+      height: 100vh;
+      width: 100%;
+      
+    }
+      .main-container .card{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 280px;
+        height: 450px;
+        padding: 22px;
+        background: white;
+        border-radius: 5%;
+        box-shadow: 10px 10px 0px -1px rgba(0,0,0,1);
+      }
+
+        .card .card__image{
+          margin: 0;
+        }
+
+          .card__image img{
+            width: 100%;
+            height: auto;
+            justify-self: center;
+            border-radius: 5%;
+          }
+        
+        .card .card__btn{
+          background: #F6D776;
+          border: none;
+          padding: 6px 12px;
+          border-radius: 5%;
+          align-self: flex-start;
+          margin-top: 24px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .card p{
+          align-self: flex-start;
+        }
+
+        .card p:nth-child(3){
+          font-size: 12px;
+          
+        }
+
+        .card h1{
+          font-size: 20px;
+          align-self: flex-start;
+          margin: 0;
+        }
+
+        .card p:nth-child(5){
+          font-size: 14px;
+          font-weight: bold;
+          color: var(--very-light-pink);
+        }
+
+        .card .card__user{
+          display: flex;
+          align-self: flex-start;
+          margin: 0;
+          margin-top: 48px;
+          align-items: center;
+        }
+          .card__user img{
+            width: 32px;
+            height: 32px;
+            justify-self: center;
+          }
+
+          .card__user span{
+            font-weight: bold;
+            margin-left: 12px;
+          }
+  </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+          <figure class="card__image">
+            <img src="assets/images/illustration-article.svg" alt="img">
+          </figure>
+          <input type="submit" value="Learning" class="card__btn">
+          <p>Published 21 dec 2023</p>
+          <h1>HTML & CSS foundations</h1>
+          <p>These languages are the backbone of every website,
+            defining structure, content, and presentation.
+          </p>
+          <figure class="card__user">
+            <img src="assets/images/image-avatar.webp" alt="icon">
+            <span>Greg Hooper</span>
+          </figure>
+        </div>
+    </div>
+</body>
+</html>
